@@ -43,7 +43,8 @@ metadata:
 
 spec: 
   rules:
-  - http:
+  - host: conversao.local
+    http:
       paths:
       - pathType: Prefix
         path: "/"
