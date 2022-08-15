@@ -2,7 +2,7 @@ FROM node:16-alpine AS builder
 
 WORKDIR /app
 COPY . /app
-RUN npm install --save-dev webpack
+RUN npm install -D webpack-cli
 RUN npm run build
 
 
