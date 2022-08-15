@@ -8,4 +8,4 @@ RUN npm run build
 
 FROM nginx:alpine
 COPY ./nginx.conf /etc/nginx/conf.d/app.conf
-COPY --from=builder /app/* /app
+COPY --from=builder /app/build /app
