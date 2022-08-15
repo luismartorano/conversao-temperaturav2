@@ -13,4 +13,4 @@ CMD [ "node", "server.js" ]
 
 FROM nginx:alpine
 COPY ./nginx.conf /etc/nginx/conf.d/app.conf
-COPY --from=builder /app/build /app
+COPY --from=builder /app /app
